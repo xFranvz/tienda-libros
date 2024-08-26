@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros.net</title>
+    <link rel="icon" type="image/png" href="img/icono.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+  
+
+    <div class="container-indice" >
+        <div class="container-indice-atencionCliente">
+            <div class="atencionCliente">
+                    <div class="imagen-atencionCliente">            
+                        <i class='bx bx-headphone'></i>
+                    </div>
+                    <div class="atencionCliente-texto">Atención al cliente
+                    </div>
+                    <div class="atencionCliente-num">+34 692 774 543
+                    </div>
+            </div>        
+        </div>
+
+        
+        <div class="container-nombrePag" id="cursor" id="indice">
+            <img src="img/fondolibros.net1-removebg-preview.png" height="80px">
+        </div>    
+
+       
+
+
+        
+
+        <div class="container-carrito" id="carritoCompra">
+            <img src="img/carritoCompra-removebg-preview.png" height="40px">
+            <div class="container-carrito-texto" id="container-carrito-texto" style="display:none"><div class="textoInterior" id="textoInterior" ></div></div>
+        </div>
+        
+ <div class="usuarioGrande" id="usuarioGrande">
+        
+            <div class="container-usuario" id="usuarioInicio" >
+                <i class='bx bxs-user'></i>
+                
+    <div class="divNombreUsuario" id="divNombreUsuario" style="display:none">Bienvenido,
+        <div class="nombreInteriorUsuario" id="nombreInteriorUsuario"></div></div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="sidebarMonto" style="display:none" id="cesta1">
+        <div class="pedidos">
+
+            <div class="juntar4">
+                <div class="precioLibros">Precio de los libros:</div>
+               
+                <div class="divPrecioTotal" id="PrecioTotal" value="number">0</div>€
+    
+            </div> 
+            <div class="juntar6" id="envio" style="display:none">
+                <div class="precioLibros">Precio envio:<div class="divPrecioTotal" id="contenidoEnvio" value="number">0</div>
+            </div>
+               
+    
+            </div>
+    
+           <div class="juntar6" id="precioFinal" style="display:none">
+                <div class="precioLibros">Precio final:                
+                    <div class="divPrecioTotal" id="PrecioFinal" value="number">0</div>€
+            </div>
+               
+    
+            </div>
+
+        </div>
+       
+       
+        <button class="pagar" id="pagar" >REALIZAR PEDIDO</button>
+    </div>
+    <div class="container-indice-inferior" >
+        <div class="container-indice-inferior-dentro">
+            <div class="opcion" id="inicio">INICIO</div>
+            <div class="opcion" id="cursor"><a id="topseller" class="nada">TOP SELLERS</a></div>
+            
+
+
+            <div class="container-buscador">
+                <input class="buscador" id="buscador" placeholder="Búsca aquí">
+                <div class="container-buscador1">
+                    <button class="buscador1" id="buscador1">
+                </div>
+            </div>
+
+            
+          
+
+        </div>
+        
+ 
+    </div>
+
+    <div class="container-contenido">
+        <div class="container-imagen-contenido">        
+            <img src="img/fondo.png" width="202%" height="600px">
+        </div>
+        <div class="container-texto-contenido">
+            <div class="container-texto-1">Historias inolvidables</div>
+            <div class="container-texto-2">Los libros son ventanas <br>hacia nuevos horizontes.</div>
+            <button class="boton-bonito"><a href="#seccion1" class="nada1">Comprar ahora</a></button>
+
+            
+        </div>
+    </div>
+    
+    
+        
+        
+    <div class="cerrarSesion" id="cerrarSesionDiv" style="display:none">
+        <button class="botonCerrarSesion" id="botonCerrarSesion">Cerrar Sesión</button>
+    </div>
+   
+    <div class="usuarioIncioSesionBlock" id="usuarioIncioSesionBlock" style="display:none">
+        <button class="inicio-Sesion-Real" id="inicioSesionReal">INICIAR SESIÓN</button>
+        <div class="registrarseJuntar">
+            <div class="registrarse">¿Nuevo cliente?</div>
+            <div class="registrarse1">
+               <a href="registrarse/registrarse.html">Regístrate ahora</a> 
+
+            </div>
+
+        </div>
+    </div>
+    <div class="barrita" id="barrita"  style="display:block">
+     
+    </div>
+
+    </div>
+    <nav class="sidebar" style="display:none" id="cesta">
+      
+        <div class="scrollbox">
+            
+            <div class="scrollbox-inner">
+            <div class="encabezado-scrollbox">
+            CESTA
+            </div>
+            <div class="divInteriorScroll">
+                <p id="interiorScroll">
+                   
+                   
+                    
+                    
+                 </p>
+
+            </div>
+               
+            </div>
+            
+        </div>
+        
+    </nav>
+    
+   
+    <div class="container-4-infos">
+        <div class="container-1-info">
+            <div class="container-1-foto">            
+            <i class='bx bxs-plane-alt'></i>
+            </div>
+            <div class="container-1-info-texto">
+                Envio gratuito a nivel mundial 
+                <div class="container-1-info-subtexto">
+                    En pedidos superiores a 30€
+                </div>
+            </div>
+        </div>
+
+        <div class="container-1-info">
+            <div class="container-1-foto">            
+                <i class='bx bxs-wallet' ></i>
+            </div>
+            <div class="container-1-info-texto">
+                Reembolso 
+                <div class="container-1-info-subtexto">
+                    100% garantía de devolucion de dinero
+                </div>
+            </div>
+        </div>
+
+        <div class="container-1-info">
+            <div class="container-1-foto">            
+                <i class='bx bxs-gift' ></i>
+            </div>
+            <div class="container-1-info-texto">
+                Tarjeta regalo especial 
+                <div class="container-1-info-subtexto">
+                    Ofrece bonos especiales con regalo
+                </div>
+            </div>
+        </div>
+
+        <div class="container-1-info">
+            <div class="container-1-foto">            
+                <i class='bx bx-headphone' ></i>            </div>
+            <div class="container-1-info-texto">
+                Servicio al cliente 
+                <div class="container-1-info-subtexto">
+                    24/7 Soporte técnico
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container2-info">
+            <div class="container2-texto" id="seccion1" >Nuestros productos</div>
+        <div class="container3-texto"></div>
+    </div>
+
+    <div class="filtro" id="busca">
+        <div class="reiniciar" id="botonReiniciar"><i data-lucide="rotate-ccw"></i>
+        </div>
+        <div class="filtro-dentro">
+
+       <div class="botonOrdenar">
+        
+            <button class="ordenar" id="ordenar">        
+                Ordenar <span class="triangulo"><div id="triangulo1"> ▼</div></span>
+            </button>
+        </div>
+        <div class="opcionesBotonOrdenar" id="opcionesBotonOrdenar" style="display:none">
+
+            <div class="ordenarOpciones">
+                <button id="novedad" class="opcionOrdenar">
+                    <div class="dentroOpcion">Novedades</div>
+                </button>
+            </div>
+            <div class="ordenarOpciones1">
+                <button id="ordenarMenorMayor" class="opcionOrdenar">
+                    <div class="dentroOpcion">Precio más bajo</div>
+                </button>
+            </div>
+
+            <div class="ordenarOpciones2">
+                <button id="ordenarMayorMenor" class="opcionOrdenar">
+                    <div class="dentroOpcion">Precio más alto</div>
+                </button>
+            </div>
+        
+        </div>
+           
+        <div class="botonOrdenar1">
+            <button class="ordenar" id="ordenar1">        
+                Categoria <span class="triangulo"><div id="triangulo2"> ▼</div></span>
+            </button>
+        </div>
+
+        <div class="opcionesBotonOrdenar1" id="opcionesBotonOrdenar1" style="display:none">
+
+            <div class="AordenarOpciones">
+                <button id="Novela" class="opcionOrdenar">
+                    <div class="dentroOpcion">Novela</div>
+                </button>
+            </div>
+
+            <div class="A1ordenarOpciones">
+                <button class="opcionOrdenar" id="Thriller">
+                    <div class="dentroOpcion">Thriller</div>
+                </button>
+            </div>
+
+            <div class="A2ordenarOpciones">
+                <button class="opcionOrdenar" id="Ciencia Ficcion">
+                    <div class="dentroOpcion">Ciencia Ficción</div>
+                </button>
+            </div>
+
+            <div class="A3ordenarOpciones">
+                <button class="opcionOrdenar" id="Romance">
+                    <div class="dentroOpcion">Romance</div>
+                </button>
+            </div>
+
+            <div class="A4ordenarOpciones">
+                <button class="opcionOrdenar" id="Terror">
+                    <div class="dentroOpcion">Terror</div>
+                </button>
+            </div>
+           
+           
+
+        
+        </div>
+
+        <div class="botonOrdenar2">
+            <button class="ordenar" id="ordenar2">        
+                Tapa   <span class="triangulo"><div id="triangulo3"> ▼</div></span>
+            </button>
+        </div>
+
+        <div class="opcionesBotonOrdenar1" id="opcionesBotonOrdenar2" style="display:none">
+
+            <div class="BordenarOpciones">
+                <button class="opcionOrdenar" id="tapa dura">
+                    <div class="dentroOpcion">Dura</div>
+                </button>
+            </div>
+
+            <div class="B1ordenarOpciones">
+                <button class="opcionOrdenar" id="tapa blanda">
+                    <div class="dentroOpcion">Blanda</div>
+                </button>
+            </div>
+
+        </div>
+
+
+                <div class="CordenarOpciones">
+                    <button class="ordenar" id="ordenar3">        
+                        Precio <span class="triangulo"><div id="triangulo4"> ▼</div></span>
+                    </button>
+                </div>
+                <div class="opcionesBotonOrdenar1" id="opcionesBotonOrdenar3" style="display:none">
+
+                    <div class="CaordenarOpciones">
+                        <div class="inputs">   
+                            <div class="wrapper-input-precio">
+                                <input class="input-precio1" id="preciominimo" type="number" placeholder="0"   min="0">
+                                <div class="icono">   
+                                 <i class='bx bx-euro'></i>
+                                </div>
+
+                            
+                            </div>
+                            
+                            <div class="palo"></div>
+                            <div class="wrapper-input-precio2">
+                                <input class="input-precio2" id="preciomaximo" type="number" placeholder="0" min="0">
+                                <div class="icono">                                <i class='bx bx-euro'></i>
+                                </div>
+                            </div>  
+                            <div class="envio">Envios gratuitos en pedidos mayores de 30€</div>
+
+                            <div class="botonInput"><button id="filtrarPrecio">FILTRAR</button>
+
+                            </div>
+                        </div>
+                    </div>
+              
+        
+                </div>
+
+    </div>
+
+  
+
+</div>
+</div>
+
+<div class="container-grid-fuera">
+<div class="container-grid" id="container-grid">
+    
+     
+
+    
+   
+</div>
+</div>
+</div>
+
+<div class="espacioFinal"></div>
+    <div class="newsLetterBox">
+        
+        <div class="infoFooter">
+            <table class="tabla1" border="1">
+                <tr>
+                    <td class="espacio1">
+                        <div class="simboloInterior">                        <i class='bx bxs-phone'></i>
+                        </div>
+                    </td>
+                    <td>
+                        +34 692 774 543
+                    </td>
+                </tr>
+                <tr>
+                    <td class="espacio1">
+                        <div class="simboloInterior"><i class='bx bxs-envelope' ></i></div>
+                        </td>
+                    <td>
+                        librosnet@gmail.com
+                    </td>
+                </tr>
+                <tr>
+                    <td class="espacio1">
+                        <div class="simboloInterior">
+                            <i class='bx bx-map' ></i>
+
+                        </div>
+                    </td>
+                    <td>
+                        Calle Manzanar nº3, 41701                    </td>
+                </tr>
+
+            </table>
+
+           
+        </div>
+
+        <div class="redesSocialesFlexbox">
+        <div class="tituloRedes">REDES SOCIALES</div> 
+        <div class="barra"></div>
+
+        <div class="juntar3">  
+            <div class="redSocial1"><i class='bx bxl-instagram' ></i></div>
+            <div class="redSocial2"><div class="dentroRedsocial2"><i class='bx bxl-linkedin' ></i></div></div>
+
+            <div class="redSocial1"><i class='bx bxl-twitter' ></i></div>
+            <div class="redSocial1"><i class='bx bxl-youtube' ></i></div>
+            <div class="redSocial1"><i class='bx bxl-meta' ></i></div>
+        </div> 
+        </div>
+
+
+       
+        <div class="newsLetter">
+
+            <div class="newsLetterTittle">
+                WEEKLY NEWSLETTER
+                <div class="barra"></div>
+              </div>
+        
+        <input class="inputNews" placeholder="Nombre" id="nombre1">
+        
+        <input class="inputNews1" placeholder="Correo electrónico" id="correo1">
+        
+        <button class="subscribirse" id="subscribirse">SUBSCRIBIRSE</button>
+        </div>
+
+
+
+    </div>
+
+  
+    <div class="finalFlexbox">
+        <div class="textoFinalFlexbox">
+            © All rights reserved 2024
+        </div></div>
+  
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+
+    
+</body>
+</html>
